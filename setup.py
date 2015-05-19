@@ -5,7 +5,7 @@ setup(
     version='0.1.0',
     packages=[''],
     url='',
-    license='',
+    license='MIT',
     author='Tom Fish',
     author_email='tfish@guerillero.net',
     description='An early alpha version of an open source AnthroPac replacement'

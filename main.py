@@ -3,7 +3,7 @@
 
 #  The MIT License (MIT)
 #
-#  Copyright (c) 2015 Tom Fish
+#  Copyright (c) 2015 Tom Fish <guerillero.net>
 #
 #  Permission is hereby granted, free of charge, to any person obtaining a copy
 #  of this software and associated documentation files (the "Software"), to deal
@@ -22,7 +22,6 @@
 #  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 #  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 #  SOFTWARE.
-
 
 import config
 import csv
@@ -75,8 +74,8 @@ class ItemData:
         self.avRank = average(self.ranks, self.freq)
 
     def salience(self, recordCount):
-        self.smith = smithS(self.ranks, recordCount, self.totalRanks, self.name)
-        self.sutrop = sutropS(self.ranks, self.freq, recordCount)
+        self.smith = smithS(self.ranks, recordCount, self.totalRanks)
+        self.sutrop = sutropS(self.ranks, self.freq)
 
     def returnData(self):
         newArray = [self.name, self.freq, round(self.avRank, 2), round(self.smith, 4), round(self.sutrop, 4),
@@ -91,6 +90,7 @@ class FreeListData:
 
     def addToFL(self, addition):
         self.FreeList.append(addition)
+
 
 fin = open(config.importFile, 'r')
 FreeListMatrix = []

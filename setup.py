@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='OpenAnthroStat',
-    version='0.1.1',
+    version='0.2.0',
     packages=[''],
     url='https://github.com/Guerillero/OpenAnthroStat',
     license='MIT',

@@ -75,7 +75,7 @@ class ItemData:
 
     def salience(self, recordCount):
         self.smith = smithS(self.ranks, recordCount, self.totalRanks)
-        self.sutrop = sutropS(self.ranks, self.freq)
+        self.sutrop = sutropS(self.ranks, recordCount)
 
     def returnData(self):
         newArray = [self.name, self.freq, round(self.avRank, 2), round(self.smith, 4), round(self.sutrop, 4),

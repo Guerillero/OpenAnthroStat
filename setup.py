@@ -2,9 +2,9 @@ from distutils.core import setup
 
 setup(
     name='OpenAnthroStat',
-    version='0.1.0',
+    version='0.1.1',
     packages=[''],
-    url='',
+    url='https://github.com/Guerillero/OpenAnthroStat',
     license='MIT',
     author='Tom Fish',
     author_email='tfish@guerillero.net',

@@ -1,15 +1,15 @@
 # OpenAnthroStat
 A free Freelist analysis program in the early stages of development written in python 2.X. The goal is to create a fully 
-functional platform for the analysis of freelists and pile sorts under a free licence. Currently, it has no GUI and can 
-only output csv files.
+functional platform for the analysis of freelists and pile sorts under a free licence. Currently, it can only anylize freelist 
+data and has a very simple GUI written with `Tkinter`.
 
 ##Use
-The `config.py` file contains two strings. `importFile` is the path to the file containing the raw data and `outputFile` 
-is the path to place where the csv file will be outputted.
+As long as everything in this package is in the same directory, general users shouldn't need to do anything more than running `OpenAnthroStat.py`. 
 
 ##Salience
 OpenAnthroStat calculates Smith's S and Sutrop's S (Smith & Borgatti 1998; Sutrop 2001). Since they are not always the 
 same, an average is taken and is displayed as `Aggregate S`. 
+
 ###Functions
 Stand alone functions to calculate both Smith's S and Sutrop's S can be found in `salience.py`.
  

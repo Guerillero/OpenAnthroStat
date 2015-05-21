@@ -49,15 +49,19 @@ def launcher():
 
 boxen = Tk()
 boxen.title("OpenAnthroStat")
-f = Frame(boxen)
+fbutton = Frame(boxen, padx=10, pady=20)
 fTitle = Frame(boxen)
 fTxt = Frame(boxen)
+fRadioButton = Frame(boxen, padx=2, pady=5)
+
+# pack
 fTitle.pack()
 fTxt.pack()
-f.pack()
+fRadioButton.pack()
+fbutton.pack()
 
 # Create the title
-title = Label(fTitle, height=2, width=50, text="OpenAnthroStat — Freelist Analysis")
+title = Label(fTitle, height=2, width=50, text="OpenAnthroStat — FreeList Analysis", font="default 20 bold italic")
 title.pack()
 
 #create the scroll bar
@@ -73,12 +77,19 @@ sb.config(command=tex.yview)
 tex.config(yscrollcommand=sb.set)
 
 # Buttons
-b1 = Button(f, text='Input file', command=inputChooser)
-b2 = Button(f, text='Output file', command=outputChooser)
-b3 = Button(f, text='Run', command=launcher)
+b1 = Button(fbutton, text='Input file', command=inputChooser, padx=2, pady=2)
+b2 = Button(fbutton, text='Output file', command=outputChooser, padx=2, pady=2)
+b3 = Button(fbutton, text='Run', command=launcher, padx=2, pady=2)
 b1.grid(row=0, column=0)
 b2.grid(row=0, column=1)
-b3.grid(row=0, column=3)
+b3.grid(row=0, column=2)
+
+# Radio Buttons. For future use.
+v = StringVar()
+#rbL = Label(fRadioButton, height=2, width=30, text="Data Type (Non-Operational)")
+rb1 = Radiobutton(fRadioButton, text="FreeList", variable=v, value=1)
+#rbL.grid(row=0, column=0)
+rb1.grid(row=1, column=0)
 
 # Run
 mainloop()

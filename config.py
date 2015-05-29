@@ -4,5 +4,5 @@
 #  The place where the resulting csv should go goes in 'outputFile'
 ###################################################################
 
-importFile = "C:\\data.txt" # Data to import
-outputFile = "C:\\output.csv" # Output file
+importFile = "C:\\AP\\data.txt" # Data to import
+outputFile = "C:\\AP\\output.csv" # Output file

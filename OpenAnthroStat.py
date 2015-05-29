@@ -47,6 +47,18 @@ def launcher():
     tex.config(yscrollcommand=sb.set)
 
 
+def about():
+    output = "OpenAnthroStat Version Brisbane (0.2.0) -- Released on 21 May, 2015.\n" \
+             "https://github.com/Guerillero/OpenAnthroStat \n\nAbout Salience:\nOpenAnthroStat calculates " \
+             "Smith's S and Sutrop's S (Smith & Borgatti 1998; Sutrop 2001).\n" \
+             "Since they are not always the same, an average is taken and is displayed as Aggregate S." \
+             "\n\n\nuLicensing Information: \n\n" + MIT
+
+    #update the text
+    tex.insert(END, output)
+    sb.config(command=tex.yview)
+    tex.config(yscrollcommand=sb.set)
+
 boxen = Tk()
 boxen.title("OpenAnthroStat")
 fbutton = Frame(boxen, padx=10, pady=20)
@@ -80,9 +92,11 @@ tex.config(yscrollcommand=sb.set)
 b1 = Button(fbutton, text='Input file', command=inputChooser, padx=2, pady=2)
 b2 = Button(fbutton, text='Output file', command=outputChooser, padx=2, pady=2)
 b3 = Button(fbutton, text='Run', command=launcher, padx=2, pady=2)
+b4 = Button(fbutton, text='About', command=about, padx=2, pady=2)
 b1.grid(row=0, column=0)
 b2.grid(row=0, column=1)
 b3.grid(row=0, column=2)
+b4.grid(row=0, column=3)
 
 # Radio Buttons. For future use.
 v = StringVar()

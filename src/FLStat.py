@@ -49,7 +49,7 @@ def main(FreeListMatrix):
 
     # Build the output
 
-    fout = open(config.outputFile, 'wb')
+    fout = open(config.outputFile + "output.csv", 'wb')
 
     headings = ["Name", "Count", "AvRank", "Smith's S", "Sutrop's S", "Aggregate S"]
 

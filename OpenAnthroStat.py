@@ -33,7 +33,7 @@ def inputChooser():
 
 
 def outputChooser():
-        config.outputFile = tkFD.askopenfilename()
+        config.outputFile = tkFD.askdirectory()
 
 
 def launcher():
@@ -90,7 +90,7 @@ tex.config(yscrollcommand=sb.set)
 
 # Buttons
 b1 = Button(fbutton, text='Input file', command=inputChooser, padx=2, pady=2)
-b2 = Button(fbutton, text='Output file', command=outputChooser, padx=2, pady=2)
+b2 = Button(fbutton, text='Output folder', command=outputChooser, padx=2, pady=2)
 b3 = Button(fbutton, text='Run', command=launcher, padx=2, pady=2)
 b4 = Button(fbutton, text='About', command=about, padx=2, pady=2)
 b1.grid(row=0, column=0)

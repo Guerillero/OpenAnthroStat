@@ -1,3 +1,5 @@
+** Note: The version found in this repository is in active development and is unstable. Please download the latest version, [Brisbane](https://github.com/Guerillero/OpenAnthroStat/releases/tag/Brisbane__v0.2.0-beta), instead. **
+
 # OpenAnthroStat
 A free Freelist analysis program in the early stages of development written in python 2.X. The goal is to create a fully 
 functional platform for the analysis of freelists and pile sorts under a free licence. Currently, it can only analyze freelist 
@@ -24,7 +26,8 @@ Any other questions [can be sent to me](http://guerillero.net/contact).
 
 ##Change log
 * [Adelaide](https://github.com/Guerillero/OpenAnthroStat/releases/tag/Adelaide__v0.1.0-alpha) - 20 May, 2015
-* [Brisbane](https://github.com/Guerillero/OpenAnthroStat/releases/tag/Brisbane__v0.2.0-beta) - 21 May, 2015 - Bug fixes, adding a GUI, making the program self contained 
+* [Brisbane](https://github.com/Guerillero/OpenAnthroStat/releases/tag/Brisbane__v0.2.0-beta) - 21 May, 2015 - Bug fixes, adding a GUI, making the program self contained
+* Canberra - 4 July, 2015 (expected)
  
 ##Citations
 Smith, J J & Borgatti, S. P. 1998. Salience Counts—And So Does Accuracy: Correcting and Updating a Measure for Free-List-Item Salience. *Journal of Linguistic Anthropology.* 7(2):208-209.

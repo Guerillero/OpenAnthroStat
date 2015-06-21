@@ -36,7 +36,6 @@ class flEntry:
         return self.chain
 
 def main(FreelistdataArray):
-    print(FreelistdataArray)
     matrix = []
     inf = []
     for i in range(len(FreelistdataArray)):
@@ -53,16 +52,21 @@ def main(FreelistdataArray):
                     elif x + 1 == len(matrix):
                         matrix.append(flEntry(fla[x]))
                         break
-    for v in range(len(FreelistdataArray)):
-        for q in range(len(FreelistdataArray[v].FreeList)):
-            for b in range(len(matrix)):
-                print(str(len(FreelistdataArray[v].FreeList)) + " : " +str(q))
-                if matrix[b].name == FreelistdataArray[v].FreeList[q]:
-                    matrix[b].addRank(q+1)
-                    break
-                elif len(FreelistdataArray[v].FreeList) == q+1:
-                    matrix[b].addRank(0)
-                    break
+    nx = 0
+    for v in range(len(FreelistdataArray)): # Move through the array of informants
+        nx += 1
+        for c in range(len(matrix)): # Move through the array of responses
+            for b in range(len(FreelistdataArray[v].FreeList)): # Move through the freelist
+                if matrix[c].name == FreelistdataArray[v].FreeList[b]:
+                    matrix[c].addRank(v+1)
+                elif len(matrix[c].chain) == 1-nx and len(matrix) == c+1:
+                    matrix[c].addRank(0)
+
+    fout = open(config.outputFile + "matrix.csv", 'wb')
+    csvFile = csv.writer(fout, dialect=csv.excel)
+    inf.insert(0,"")
+    csvFile.writerow(inf)
     for c in range(len(matrix)):
-        print(matrix[c].name + "\t\t" + str(matrix[c].returnData()))
-    print("end")
+        fab = matrix[c].returnData()
+        fab.insert(0, matrix[c].name)
+        csvFile.writerow(fab)

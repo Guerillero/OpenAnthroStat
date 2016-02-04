@@ -24,7 +24,7 @@
 
 import config
 from src.common import *
-from src import FLStat, RankMatrix
+from src import FLStat
 
 
 def main():
@@ -50,6 +50,5 @@ def main():
                         # GOTO the last entry and append to the list of entries in the list
                         FreeListMatrix[z].addToFL(dat)
     fin.close()
-    RankMatrix.main(FreeListMatrix)
     return FLStat.main(FreeListMatrix)
 

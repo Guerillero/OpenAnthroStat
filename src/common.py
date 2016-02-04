@@ -24,10 +24,10 @@
 
 
 def average(li):
-    sumOf = 0.0
+    sum_of = 0.0
     for i in range(len(li)):
-        sumOf += li[i]
-    return sumOf / len(li)
+        sum_of += li[i]
+    return sum_of / len(li)
 
 
 def informantparser(s):
@@ -51,6 +51,7 @@ def sutropS(responsePlacement, listCount):
     for i in range(len(responsePlacement)):
         sumOf = float(responsePlacement[i]) + sumOf
     return float(len(responsePlacement)) / (float(listCount) * (sumOf / float(len(responsePlacement))))
+
 
 class ItemData:
     def __init__(self, name, rank, entries):
@@ -95,16 +96,15 @@ class FreeListData:
         return self.FreeList
 
 
-MIT = "The MIT License (MIT)\n\nCopyright (c) 2015 Tom Fish <guerillero.net>\n\n"
-MIT += "Permission is hereby granted, free of charge, to any person obtaining a copy of this software\n" \
-       "and associated documentation files (the \"Software\"), to deal in the Software without restriction,\n" \
-       "including without limitation the right to use, copy, modify, merge, publish, distribute, sublicense,\n" \
-       "and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do\n" \
-       "so, subject to the following conditions:\n\n"
-MIT += "The above copyright notice and this permission notice shall be included in all copies or substantial\n" \
-       "portions of the Software.\n\n"
-MIT += "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT\n" \
-       "NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY FITNESS FOR A PARTICULAR PURPOSE AND\n" \
-       "NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES\n" \
-       "OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR\n" \
-       "IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+MIT = "The MIT License (MIT)\n\nCopyright (c) 2015 Tom Fish <guerillero.net>\n\n" \
+      "Permission is hereby granted, free of charge, to any person obtaining a copy of this software\n" \
+      "and associated documentation files (the \"Software\"), to deal in the Software without restriction,\n" \
+      "including without limitation the right to use, copy, modify, merge, publish, distribute, sublicense,\n" \
+      "and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do\n" \
+      "so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall " \
+      "be included in all copies or substantial portions of the Software.\n\n THE SOFTWARE IS PROVIDED \"AS IS\", " \
+      "WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT\nNOT LIMITED TO THE WARRANTIES OF " \
+      "MERCHANTABILITY FITNESS FOR A PARTICULAR PURPOSE AND\n NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR " \
+      "COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES\nOR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, " \
+      "TORT OR OTHERWISE, ARISING FROM, OUT OF OR\nIN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN" \
+      " THE SOFTWARE."

@@ -6,24 +6,26 @@
 #  The text document to be imported goes in 'importFile'
 #  The place where the resulting CSVs should go goes in 'outputFile'
 #
+#  TBH, I have no idea why you would want to do this
+#
 ###################################################################
 import sys
 
 # Linux, BSD, and Cygwin
 if sys.platform.startswith('linux') or sys.platform.startswith('freebsd') or sys.platform.startswith('cygwin'):
-    importFile = "\\tmp\\data.txt"
-    outputFile = "\\tmp\\"
+    importFile = "data.txt"
+    outputFile = ""
 
 # Windows
 elif sys.platform.stsartswith('win'):
-    importFile = "C:\\AP\\data.txt"
-    outputFile = "C:\\AP\\"
+    importFile = "data.txt"
+    outputFile = ""
 
 # Mac OSX
 elif sys.platform.startdwith('darwin'):
     # I am using the BSD options for now
-    importFile = "\\tmp\\data.txt"
-    outputFile = "\\tmp\\"
+    importFile = "data.txt"
+    outputFile = ""
 
 else:
     # Does anyone even use OS2, RiscOS, or AethOS?

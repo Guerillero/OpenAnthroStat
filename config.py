@@ -17,12 +17,12 @@ if sys.platform.startswith('linux') or sys.platform.startswith('freebsd') or sys
     outputFile = ""
 
 # Windows
-elif sys.platform.stsartswith('win'):
+elif sys.platform.startswith('win'):
     importFile = "data.txt"
     outputFile = ""
 
 # Mac OSX
-elif sys.platform.startdwith('darwin'):
+elif sys.platform.startswith('darwin'):
     # I am using the BSD options for now
     importFile = "data.txt"
     outputFile = ""

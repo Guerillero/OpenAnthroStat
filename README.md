@@ -22,7 +22,7 @@ comma separated files that are not easily imported into spreadsheet programs.
 
 If you have found a bug, please submit it to the bug tracker here on GitHub. I will try to fix it as quick as I can.
 
-Any other questions [can be sent to me](http://guerillero.net/contact).
+Any other questions [can be sent to me](http://blog.guerillero.net/contact).
 
 ##Change log
 * [Adelaide](https://github.com/Guerillero/OpenAnthroStat/releases/tag/Adelaide__v0.1.0-alpha) - 20 May, 2015

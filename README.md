@@ -5,7 +5,7 @@ A free Freelist analysis program in the early stages of development written in p
 functional platform for the analysis of freelists and pile sorts under a free licence. Currently, it can only analyze freelist 
 data and has a very simple GUI written with `Tkinter`.
 
-##Use
+## Use
 As long as everything in this package is in the same folder, general users shouldn't need to do anything more than 
 double clicking on `OpenAnthroStat.py`. 
 
@@ -27,7 +27,6 @@ Any other questions [can be sent to me](http://blog.guerillero.net/contact).
 ## Change log
 * [Adelaide](https://github.com/Guerillero/OpenAnthroStat/releases/tag/Adelaide__v0.1.0-alpha) - 20 May, 2015
 * [Brisbane](https://github.com/Guerillero/OpenAnthroStat/releases/tag/Brisbane__v0.2.0-beta) - 21 May, 2015 - Bug fixes, adding a GUI, making the program self contained
-* Canberra - May, 2016 (expected) - display data in a matrix
  
 ## Citations
 Smith, J J & Borgatti, S. P. 1998. Salience Counts—And So Does Accuracy: Correcting and Updating a Measure for Free-List-Item Salience. *Journal of Linguistic Anthropology.* 7(2):208-209.
